@@ -7,6 +7,10 @@
 <link rel="icon" href="https://postimg.cc/mP2wk5hP">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://is.gd/0TvEj7">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="main.css">
+<script src="modernizr-2.6.2.min.js"></script>
+<style type="text/css">
 <style>
 body {
   background-image: url("https://s3.gifyu.com/images/TOOL---Live-Visual-Set---Imgur.gif");
@@ -117,8 +121,60 @@ body {
   font-size: 25px;
   color: white;}
 </style>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #800000;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+</style>
 </head>
-<body>
+<body class="demo">
+  <div id="demo-content">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		</div>
+<div id="content">
 <div class="nav" id="navi">
 <a href="index.htm" class="active">Home</a>
 <div class="dropdown">
@@ -164,8 +220,20 @@ function myFunction() {
   }
 }
 </script>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
 <center>
-<img src="https://i.postimg.cc/2SMtHMzj/20190421-044036.jpg">
+  <div class="container">
+  <img src="https://i.postimg.cc/2SMtHMzj/20190421-044036.jpg" alt="aliceinwonderland" class="image">
+  <div class="overlay">
+    <div class="text">Feed Your Head</div>
+  </div>
+</div>
 </center>
 <center>
 <div class="txt"><center><i>"I cannot teach anybody anything. I can only make them
@@ -173,6 +241,7 @@ function myFunction() {
   and files.&nbsp;This site is intended as a source of an assortment of various information,
   in hopes of enhancing society mentally & metaphysically by provoking abstract thoughts and comprehension of ideals ranging from the complex to the simple.</br></div>
 </center>
+</div>
 </body>
 </html>
 Copyright 2019 I
