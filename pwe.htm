@@ -1,7 +1,7 @@
 <!DOCTYPE HTML5>
 <head>
 <meta charset="utf-8">
-<title>Memoria Peripatos - The Math behind password strength</title>
+<title>White Rabbit- The Math behind password strength</title>
 <meta name="description" content="About Memoria Peripatos">
 <meta name="author" content="I">
 <link rel="icon" href="https://postimg.cc/mP2wk5hP">
@@ -116,7 +116,47 @@ body {
   font-size: 25px;
   color: white;}
 </style>
+<style>
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('https://wallpapercave.com/wp/wp2195772.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+</style>
 </head>
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="https://wallpapercave.com/wp/wp2195772.jpg" class="fullscreen-bg__video">
+        <source src="https://i.imgur.com/waGKlaq.mp4" type="video/mp4">
+    </video>
+</div>
 <body>
 <div class="nav" id="navi">
 <a href="index.htm" class="active">Home</a>
@@ -164,7 +204,7 @@ function myFunction() {
 }
 </script>
 <center>
-  <div class="txt">
+<div class="txt">
 <img src="https://www.pleacher.com/mp/mgifs/gifs19/form26.gif"><br>
 <i>E stands for "entropy," which is the opposite of an ordered pattern.   Entropy is good: the bigger the E, the harder a password is to crack.</i></br>
 </center>
