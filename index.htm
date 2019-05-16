@@ -7,13 +7,10 @@
 <link rel="icon" href="https://postimg.cc/mP2wk5hP">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://is.gd/0TvEj7">
-<link rel="stylesheet" href="normalize.css">
-<link rel="stylesheet" href="main.css">
-<script src="modernizr-2.6.2.min.js"></script>
-<style type="text/css">
 <style>
 body {
-  background-image: url("https://webdesignerdepot.s3.amazonaws.com/default-images/25.jpg");
+  background-image: url("");
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -164,7 +161,47 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 </style>
+<style>
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('https://wallpapercave.com/wp/wp2195718.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+</style>
 </head>
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="https://wallpapercave.com/wp/wp2195718.jpg" class="fullscreen-bg__video">
+        <source src="https://toolband.com/wp-content/uploads/2019/01/LandingVideo_7.mp4" type="video/mp4">
+    </video>
+</div>
 <div id="content">
 <div class="nav" id="navi">
 <a href="index.htm" class="active">Home</a>
@@ -220,8 +257,7 @@ function myFunction() {
 </div>
 </center>
 <center>
-<div class="txt"><center><i>"I cannot teach anybody anything. I can only make them
-  think"</i></center><br>I've been wallowing in my own confused
+<div class="txt"><center><i>
 And insecure delusions
 For a piece to cross me over
 Or a word to guide me in
@@ -234,7 +270,7 @@ My shadow
 My shadow's
 Shedding skin
 I've been picking
-My scabs again</br></div>
+My scabs again</i></br></div>
 </center>
 </div>
 </body>
