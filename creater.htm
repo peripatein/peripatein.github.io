@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 19px;
+}
+.nam {
+    color: white;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+</style>
+<style>navb {
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+}
+</style>
+<style>
+.nav {
+  background-color: #2c2f33;
+  overflow: hidden;
+}
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active {
+  background-color: #800000;
+  color: white;
+}
+.nav .icon {
+  display: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c2f33;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+.dropdown-content a:hover {
+  background-color: #2c2f33;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+.nav a.icon {
+  float: right;
+  display: block;
+}
+}
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.nav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+  }
+.nav.responsive .dropdown {float: none;}
+.nav.responsive .dropdown-content {position: relative;}
+.nav.responsive .dropdown .dropbtn {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+}
+</style>
+<style>
+.txt {
+  border: 4px solid black;
+  padding: 20px 40px 60px 30px;
+  background-color: #2c2f33;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  font-size: 25px;
+  color: white;}
+</style>
+</style>
+    <meta charset="UTF-8">
+<link rel="icon" href="https://postimg.cc/mP2wk5hP">
+<meta name="description" content="Home Of John Tachyon">
+<meta name="author" content="J.T">
+<meta name="viewport" content="width=device-width, initial-scale=0">
+<link rel="stylesheet" href="https://is.gd/0TvEj7">
+    <title>White Rabbit</title>
+</head>
+<body>
+  <div class="nav" id="navi">
+  <a href="index.htm" class="active">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">Media
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+  <a href="#">Movies</a>
+  <a href="#">Notes</a>
+  <a href="#">Misc</a>
+  </div>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">Security
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+  <a href="#">Mobile</a>
+  <a href="#">Laptop/PC</a>
+  <a href="#">Software</a>
+  </div>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">Academy
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+  <a href="ma.htm">Mathematics</a>
+  <a href="#">Science</a>
+  <a href="#">Philosophy</a>
+  </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+<script>
+function myFunction() {
+    var x = document.getElementById("navi");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }
+  </script>
+<div class="card">
+   <img src="https://s15.postimg.cc/8feb5maqj/deku_in.png" alt="John" style="width:100%">
+  <h1 class="nam">John Tachyon</h1>
+  <p class="title">Web-Designer,Programmer,
+      Information Technology Security Analyst</p>
+  <p>Georgia Technical Institute of Technology</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="https://www.twitter.com/doxingme"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div>
+ <div id="wrapper">
+        <div id="headerwrap">
+        <div id="header">
+            <h1>My Skills</h1>
+        </div>
+        </div>
+        <div id="contentwrap">
+        <div id="content">
+        <div class="txt">
+            <p>My skills include Web-Design, Information Technology Security, Encryption, Programming in Python3,HTML5,Bash, Knowledge of Debian based Servers, & CMS Management.</p>
+        </div>
+      </div>
+        </div>
+        </div>
+    </div>
+</body>
